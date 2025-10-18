@@ -1,0 +1,26 @@
+# Default owner for everything
+* @VolodymyrStetsenko
+
+# Frontend
+/apps/web/ @VolodymyrStetsenko
+
+# Backend
+/apps/api-gateway/ @VolodymyrStetsenko
+/apps/delivery/ @VolodymyrStetsenko
+
+# Services
+/services/ @VolodymyrStetsenko
+
+# Integrations
+/integrations/ @VolodymyrStetsenko
+
+# Infrastructure
+/deployments/ @VolodymyrStetsenko
+/.github/ @VolodymyrStetsenko
+
+# Documentation
+/docs/ @VolodymyrStetsenko
+/README.md @VolodymyrStetsenko
+/SECURITY.md @VolodymyrStetsenko
+/CONTRIBUTING.md @VolodymyrStetsenko
+

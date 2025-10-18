@@ -1,0 +1,34 @@
+[profile.default]
+auto_detect_remappings = true
+optimizer = true
+optimizer_runs = 200
+solc_version = "0.8.20"
+libs = ["lib"]
+src = "src"
+out = "out"
+test = "test"
+script = "script"
+ffi = true
+fs_permissions = [{ access = "read", path = "./" }]
+
+[fuzz]
+runs = 10000
+seed = 1
+max_test_rejects = 65536
+
+[invariant]
+runs = 256
+depth = 128
+fail_on_revert = false
+call_override = false
+
+[fmt]
+line_length = 100
+tab_width = 4
+bracket_spacing = true
+int_types = "long"
+
+[rpc_endpoints]
+mainnet = "${ALCHEMY_MAINNET_URL}"
+sepolia = "${ALCHEMY_SEPOLIA_URL}"
+
