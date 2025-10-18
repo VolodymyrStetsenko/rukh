@@ -1,0 +1,22 @@
+{
+  "name": "rukh-cli",
+  "version": "0.1.0",
+  "description": "RUKH CLI - Smart Contract Security Auditing Tool",
+  "author": "Volodymyr Stetsenko <volodymyr.stetsenko@example.com>",
+  "license": "MIT",
+  "bin": {
+    "rukh": "./dist/rukh-cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node rukh-cli.ts"
+  },
+  "dependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  }
+}
+
