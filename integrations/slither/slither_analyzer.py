@@ -5,6 +5,7 @@ Author: Volodymyr Stetsenko (Zero2Auditor)
 """
 
 import json
+import os
 import subprocess
 import sys
 from typing import List, Dict, Optional
@@ -92,12 +93,14 @@ class SlitherAnalyzer:
     
     def export_json(self, output_path: str):
         """Export results to JSON"""
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with open(output_path, 'w') as f:
             json.dump([asdict(v) for v in self.results], f, indent=2)
         print(f"[+] Results exported to {output_path}")
     
     def export_markdown(self, output_path: str):
         """Export results to Markdown"""
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with open(output_path, 'w') as f:
             f.write("# Slither Analysis Report\n\n")
             f.write(f"**Contract:** {self.contract_path}\n\n")
