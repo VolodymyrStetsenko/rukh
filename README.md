@@ -8,7 +8,6 @@
 > 
 > **RUKH** is a comprehensive, AI-powered platform designed for professional smart contract auditors, bug bounty hunters, and CTF players. It automates the entire audit workflow, from initial analysis to exploit generation, enabling you to find more vulnerabilities, faster.
 > 
-> This platform is your key to becoming a top-tier security expert and achieving your financial goals.
 > 
 > ## 🌟 Key Features
 > 
