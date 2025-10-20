@@ -101,7 +101,7 @@ class Vulnerability(Base):
     code_snippet = Column(Text)
     remediation = Column(Text)
     references = Column(JSON)  # List of reference URLs
-    metadata = Column(JSON)  # Additional data
+    extra_data = Column(JSON)  # Additional data
     source_engine = Column(String(100))  # Which engine found it
     created_at = Column(DateTime, default=datetime.utcnow)
     
